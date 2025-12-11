@@ -1,88 +1,224 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome – HostServerBD</title>
+    <title>Welcome to HostServerBD</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #004aad, #0077ff);
-            color: #fff;
+        * { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
+        body { background:#f2f4f8; color:#333; }
+
+        .header {
+            background:#004aad;
+            color:#fff;
+            padding:40px 20px;
+            text-align:center;
         }
+        .header h1 { font-size:45px; margin-bottom:10px; }
+        .header p { font-size:18px; }
+
         .container {
-            max-width: 850px;
-            margin: auto;
-            padding: 40px 20px;
-            text-align: center;
+            width:90%;
+            max-width:1100px;
+            margin:auto;
+            background:#fff;
+            margin-top:-30px;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 15px rgba(0,0,0,0.1);
         }
+
+        h2 { color:#004aad; margin-top:25px; }
+        h3 { color:#004aad; margin-top:15px; }
+        a { color:#004aad; font-weight:bold; text-decoration:none; }
+        a:hover { text-decoration:underline; }
+
+        ul { margin:10px 0 10px 20px; }
+
         .box {
-            background: #ffffff22;
-            padding: 30px;
-            margin-top: 25px;
-            border-radius: 15px;
-            backdrop-filter: blur(5px);
+            background:#eef3ff;
+            padding:15px;
+            margin-top:20px;
+            border-left:5px solid #004aad;
+            border-radius:5px;
         }
-        h1 {
-            font-size: 38px;
-            margin-bottom: 10px;
+
+        .support-box {
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:20px;
         }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
+
+        .support-card {
+            background:#e8f0ff;
+            padding:20px;
+            border-radius:8px;
+            border-left:6px solid #004aad;
         }
-        a {
-            color: #fff;
-            font-weight: bold;
+
+        .footer {
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+            color:#777;
         }
-        .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 25px;
-            background: #ffcc00;
-            color: #000;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
+
+        .faq-box {
+            background:#f9f9f9;
+            padding:15px;
+            border-radius:10px;
+            margin:15px 0;
+            border-left:4px solid #004aad;
         }
-        .btn:hover {
-            background: #ffe680;
-        }
-        footer {
-            margin-top: 35px;
-            font-size: 14px;
-            opacity: 0.8;
+
+        @media(max-width:768px){
+            .support-box { grid-template-columns:1fr; }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Welcome to HostServerBD</h1>
-        <p>আপনার হোস্টিং অ্যাকাউন্ট সফলভাবে অ্যাক্টিভ করা হয়েছে।  
-        আপনার পাশে আছি আমরা ২৪/৭। যেকোনো সমস্যায় যোগাযোগ করুন।</p>
+<div class="header">
+    <h1>Welcome to HostServerBD</h1>
+    <p>Your trusted hosting partner in Bangladesh</p>
+</div>
 
-        <div class="box">
-            <h2>📞 Contact & Support</h2>
-            <p><strong>Open Ticket:</strong>  
-                <a href="https://my.hostserverbd.com/submitticket.php" target="_blank">
-                    https://my.hostserverbd.com/submitticket.php
-                </a>
-            </p>
+<div class="container">
 
-            <p><strong>Email:</strong> support@hostserverbd.com</p>
-            <p><strong>Phone:</strong> +8809617171950</p>
-            <p><strong>WhatsApp:</strong> +8809617171950</p>
+    <h2>🎉 Congratulations!</h2>
+    <p>
+        ধন্যবাদ <b>HostServerBD.com</b> থেকে হোস্টিং নেওয়ার জন্য।  
+        আপনার হোস্টিং সফলভাবে অ্যাক্টিভ করা হয়েছে।
+    </p>
 
-            <a class="btn" href="https://hostserverbd.com" target="_blank">Visit Homepage</a>
+    <div class="box">
+        <h3>📞 Support Information</h3>
+        <p>আপনি যেকোনো সময় আমাদের সাপোর্ট ব্যবহার করতে পারবেন:</p>
+
+        <ul>
+            <li><b>Open Ticket:</b> <a href="https://my.hostserverbd.com/submitticket.php" target="_blank">Click Here</a></li>
+            <li><b>Email:</b> support@hostserverbd.com</li>
+            <li><b>Phone:</b> +8809617171950</li>
+            <li><b>WhatsApp:</b> +8809617171950</li>
+            <li><b>Home Page:</b> <a href="https://hostserverbd.com" target="_blank">HostServerBD.com</a></li>
+            <li><b>Client Area:</b> <a href="https://my.hostserverbd.com" target="_blank">Login Here</a></li>
+        </ul>
+    </div>
+
+    <h2>⚡ Quick Links</h2>
+    <div class="support-box">
+        <div class="support-card">
+            <h3>➡ cPanel Login</h3>
+            <p>https://yourdomain.com/cpanel</p>
         </div>
 
-        <footer>
-            &copy; 2025 HostServerBD – All Rights Reserved.
-        </footer>
+        <div class="support-card">
+            <h3>➡ Webmail</h3>
+            <p>https://yourdomain.com/webmail</p>
+        </div>
+
+        <div class="support-card">
+            <h3>➡ Billing Area</h3>
+            <p><a href="https://my.hostserverbd.com">Billing & Services</a></p>
+        </div>
+
+        <div class="support-card">
+            <h3>➡ Support Ticket</h3>
+            <p><a href="https://my.hostserverbd.com/submitticket.php">Open Ticket</a></p>
+        </div>
     </div>
+
+    <h2>📘 Full cPanel Tutorial</h2>
+
+    <h3>1️⃣ কিভাবে Email Account তৈরি করবেন?</h3>
+    <ul>
+        <li>Login → cPanel</li>
+        <li>Email Accounts → Create</li>
+        <li>Email address দিন</li>
+        <li>Password দিন</li>
+        <li>Create → Done</li>
+    </ul>
+
+    <h3>2️⃣ কিভাবে Domain / Addon Domain যোগ করবেন?</h3>
+    <ul>
+        <li>cPanel → Domains</li>
+        <li>Create New Domain</li>
+        <li>Domain লিখুন</li>
+        <li>Document Root ঠিক রাখুন</li>
+        <li>Create</li>
+    </ul>
+
+    <h3>3️⃣ PHP Version Change (CloudLinux)</h3>
+    <ul>
+        <li>cPanel → Select PHP Version</li>
+        <li>PHP 7.4 / 8.0 / 8.1 / 8.2 সিলেক্ট করুন</li>
+        <li>Set as current</li>
+    </ul>
+
+    <h3>4️⃣ Cron Job সেট করবেন কিভাবে?</h3>
+    <ul>
+        <li>cPanel → Cron Jobs</li>
+        <li>Command পেস্ট করুন</li>
+        <li>Time সেট করুন</li>
+        <li>Add New Cron Job</li>
+    </ul>
+
+    <h3>5️⃣ Database তৈরি করবেন কিভাবে?</h3>
+    <ul>
+        <li>cPanel → MySQL Databases</li>
+        <li>Create Database</li>
+        <li>User তৈরি করুন</li>
+        <li>User কে Database এ Add করুন</li>
+        <li>All Privileges দিন</li>
+    </ul>
+
+    <h3>6️⃣ Database Import কিভাবে?</h3>
+    <ul>
+        <li>cPanel → phpMyAdmin</li>
+        <li>Database select করুন</li>
+        <li>Import → SQL file upload</li>
+    </ul>
+
+    <h3>7️⃣ File Upload করবেন?</h3>
+    <ul>
+        <li>cPanel → File Manager</li>
+        <li>public_html খুলুন</li>
+        <li>Upload</li>
+    </ul>
+
+    <h3>8️⃣ Website কে Database এর সাথে Connect করবেন?</h3>
+    <pre>
+DB_HOST = localhost
+DB_NAME = your_db
+DB_USER = your_user
+DB_PASS = your_pass
+    </pre>
+
+    <h2>❓ FAQ (Frequently Asked Questions)</h2>
+
+    <div class="faq-box">
+        <h3>✔ আমার ওয়েবসাইট লোড হচ্ছে না, কি করবো?</h3>
+        <p>DNS propagation হতে 1–24 ঘন্টা লাগতে পারে।</p>
+    </div>
+
+    <div class="faq-box">
+        <h3>✔ SSL কাজ করছে না?</h3>
+        <p>cPanel → SSL/TLS Status → Run AutoSSL</p>
+    </div>
+
+    <div class="faq-box">
+        <h3>✔ Softaculous দিয়ে WordPress Install?</h3>
+        <p>cPanel → Softaculous → WordPress → Install</p>
+    </div>
+
+    <h2>🆘 Emergency Support</h2>
+    <p>Server down / critical সমস্যা হলে সাথে সাথে WhatsApp করুন: <b>+8809617171950</b></p>
+
+</div>
+
+<div class="footer">
+    © HostServerBD — All Rights Reserved.
+</div>
 
 </body>
 </html>
